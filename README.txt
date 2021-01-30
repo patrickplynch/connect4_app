@@ -15,7 +15,7 @@ public/views	all of the structure for the website. This folder includes all of t
 public/css	Contains a single site wide css file. Every web page on the site uses this file
 public/js	Contains all of the JavaScript files used on the client side of the website. Most of files are named according to what pug file uses them. 
 
-
+![](connect4_gif_1.gif)
 
 
 
