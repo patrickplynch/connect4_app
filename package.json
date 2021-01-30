@@ -1,0 +1,16 @@
+{
+  "name": "connect4_app",
+  "version": "1.0.0",
+  "description": "A connect 4 web application for comp 2406 at Carleton U",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "pug": "^3.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    include includes/csslocation.pug
+    
+    title Search
+  body(onload='init()')
+    // these are the top buttons, essentially to be used in almost every page to navigate
+    // Menu button mostly navigation
+    include includes/menu.pug
+
+    // setting button, used to add games and change the page to the users liking
+    .dropdownSetting
+      .settingsButton
+        input(type='submit' name='Settings' value='')
+      .settingObjects
+        h3 something
+        h3
+    h1.pageTitle Friends? (friend requests)
+    // else just shows the site
+    //.centerContent //add this search functionallity later
+      //input(type='text' placeholder='Search..' style='width:99%; height:20px;')
+    // this is where the lookup goes
+    .centerContent.transWhite(id='mainDiv')
+      br
+      
+      script(src='/js/search.js')
+      

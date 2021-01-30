@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  head
+    include includes/csslocation.pug
+
+    title Connect 4
+    style.
+  body(onload='init()')
+    // these are the top buttons, essentially to be used in almost every page to navigate
+    // Menu button mostly navigation
+    include includes/menu.pug
+    // setting button, used to add games and change the page to the users liking
+    include includes/pageTitle.pug
+    // else just shows the site
+    .centerContent.transWhite
+      // picture goes here
+      div
+        img.centerPic(src='/images/icons8-customer-52.png' alt='Your Profile Photo')
+      // privacy settings and profile name
+      .profile(id="privacySettings")
+      .profile
+        p
+          | Wins: #{userObj.wins}
+          br
+          |             Losses: #{userObj.losses}
+          br
+          |             Wins To Loses: #{userObj.wins/userObj.losses}
+          br
+      .profile(id='previousFiveGames')
+      script(src='/js/halfProfile.js')

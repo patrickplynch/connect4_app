@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    include includes/csslocation.pug
+    title Connect 4
+    style.
+  body(onload='init()')
+    include includes/menu.pug
+    
+    // setting button, used to add games and change the page to the users liking
+    
+    .dropdownSetting
+      .settingsButton
+        input(type='submit' name='Settings' value='')
+      .settingObjects
+        h3
+          a.menuLinks(href='/' id="addGame") Start New Game With Friend
+        h3 
+          a.menuLinks(href='/search/games') Search Games
+        h3 
+          a.menuLinks(href='/' id='addRandomGame') Start New Game With Random User
+    include includes/pageTitle.pug
+    div(id='gameArea')
+    div(id='divChatBox')
+    script(src='/js/home.js')

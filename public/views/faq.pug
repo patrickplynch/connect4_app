@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    include includes/csslocation.pug
+
+    title FAQ
+  body(onload='initMenu()')
+    // these are the top buttons, essentially to be used in almost every page to navigate
+    // Menu button mostly navigation
+    include includes/menu.pug
+
+    h1.pageTitle FAQ
+    // else just shows the site
+    .centerContent.transWhite
+      br
+      .profile.faq
+        h3 How do I play?
+        p
+          | Register an account and sign on. Then add frieds to play a game with a friend or simply start a new game by adding a new via the 'Start a New Game With Random User' in the settings drop-down menu of the Home page. If you are curious about the rules of connect 4
+          | then 
+          a(href='https://www.wikihow.com/Play-Connect-4' target='_blank') click here
+          | .
+        h3 Whose project is this?
+        p
+          | This is Patrick's Connect4 term project for COMP 2406
+        h3 How do I contact my friends?
+        p
+          | Go to the Search for People in the top left drop-down menu. You can search for them by typing the username 
+          | of the user you want to befriend. They should appear in the list, and then you can add them by pressing the 
+          | appropriate button. If you have already added them, go to your profile and then click on the 
+          | "Go To Your Friends Page" link.
+        h3 What does private vs friends only vs public do?
+        p
+          | Makes it so that sensitive information (like contact info), be invisible to
+          | all or only visible to friends, or visible to all.
+        h3 How do I change my profile info?
+        p
+          | Go to the setting button (top right) in your profile and click edit profile in the drop down menu.
+        h3 Is there any strategy to connect 4?
+        p
+          | Well there is strategy, but sadly unlike chess and go, connect 4 is
+          | a 
+          a(href='https://en.wikipedia.org/wiki/Solved_game') solved game
+          | , so there is a huge advantage to playerOne as the first player can always win if they play perfectly. 
+          | This is why if the second player manages to end the game on a tie the second player wins as they were playing a game at a disavantage the entire time
+        h3 Another question?
+        p
+          | If you have any questions the email me at ... (I'm not actually going to post my email as this server might actually be going online)
+        script(src='/js/menu.js')
